@@ -7,8 +7,8 @@ sudo dpkg --add-architecture i386 && \
   curl http://tetrinet.us/tnet113.exe > tnet113.exe && \
   wine tnet113.exe && \
   echo "alias tetrinet='wine ~/.wine/drive_c/TetriNET/TETRINET.exe'" >> ~/.bashrc && \
-  wine ~/.wine/drive_c/TetriNET/TETRINET.EXE
+  source ~/.bashrc && \
+  tetrinet
 clear
 echo
 echo "In the future just type 'tetrinet' to run TetriNET."
-echo "(You will need to close and repoen this Terminal window once, before that works.)"
